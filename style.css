@@ -156,16 +156,20 @@ body {
     margin-top: 30px;
     padding: 0px 30px;
     display: flex;
+    overflow: auto;
     justify-content: right;
     align-items: center;
-    overflow: auto;
     background-color: var(--screen1);
 }
 
 .digit {
     font-size: 45px;
+    overflow: auto;
     font-family: 'League Spartan', sans-serif;
     color: var(--white);
+}
+::-webkit-scrollbar {
+    height: 0px;
 }
 
 .keypad {
