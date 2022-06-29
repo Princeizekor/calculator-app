@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=League+Spartan:wght@700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --theme1: hsl(222, 26%, 31%);
+    --togo1: hsl(223, 31%, 20%);
+    --screen1: hsl(224, 36%, 15%);
+    --keybg1: hsl(225, 21%, 49%);
+    --keysh: hsl(224, 28%, 35%);
+    --redkey1: hsl(6, 63%, 50%);
+    --redsh1: hsl(6, 70%, 34%);
+    --greybg1: hsl(30, 25%, 89%);
+    --greysh1: hsl(28, 16%, 65%);
+    --dark1: hsl(221, 14%, 31%);
+    --white: hsl(0, 0%, 100%);
+
+    --theme2: hsl(0, 0%, 90%);
+    --togo2: hsl(0, 5%, 81%);
+    --screen2: hsl(0, 0%, 93%);
+    --keybg2:  hsl(185, 42%, 37%);
+    --keysh2: hsl(185, 58%, 25%);
+    --redkey2: hsl(25, 98%, 40%);
+    --redsh2: hsl(25, 99%, 27%);
+    --greybg2: hsl(45, 7%, 89%);
+    --greysh2: hsl(35, 11%, 61%);
+    --dark2: hsl(60, 10%, 19%);
+
+    --theme3: hsl(268, 75%, 9%);
+    --togo3: hsl(268, 71%, 12%);
+    --screen3: hsl(268, 71%, 12%);
+    --keybg3:  hsl(281, 89%, 26%);
+    --keysh3: hsl(285, 91%, 52%);
+    --redkey3: hsl(176, 100%, 44%);
+    --redsh3: hsl(177, 92%, 70%);
+    --greybg3: hsl(268, 47%, 21%);
+    --greysh3: hsl(290, 70%, 36%);
+    --dark3: hsl(52, 100%, 62%);
+
+    --yellow: hsl(52, 100%, 62%);
+
+    --del: hsl(30, 25%, 89%);
+
+    --equal: hsl(6, 85%, 63%);
+    --dell: hsl(225, 24%, 70%);
+    --button: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--theme1);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    width: 450px;
+    min-height: 80vh;
+    position: absolute;
+    top: 60px;
+    padding: 10px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cal {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--white);
+}
+
+.the {
+    position: absolute;
+    right: 80px;
+    bottom: 0%;
+}
+
+.num {
+    font-size: 10px;
+    letter-spacing: 5px;
+    padding: 0px 5px;
+    color: var(--white);
+}
+
+.togo {
+    width: 50px;
+    height: 18px;
+    border-radius: 50px;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    background-color: var(--togo1);
+}
+
+.the {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: var(--white);
+}
+
+.switch {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--redkey1);
+}
+
+.switch:hover {
+    background-color: hsl(6, 91%, 58%);
+}
+
+.left {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--redkey2);
+    margin-left: 15px;
+}
+
+.left:hover {
+    background-color: hsl(25, 85%, 50%);
+}
+.float {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--redkey3);
+    margin-left: 30px;
+}
+
+.float:hover {
+    background-color: hsl(177, 92%, 70%);
+}
+
+.screen {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: auto;
+    background-color: var(--screen1);
+}
+
+.digit {
+    font-size: 45px;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--white);
+}
+
+.keypad {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px 30px 5px 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--togo1);
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 80px;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: var(--dark1);
+    border-radius: 8px;
+    box-shadow: 0px 2.5px var(--greysh1);
+    background-color: var(--greybg1);
+}
+
+.btn:hover {
+    background-color: var(--button);
+}
+
+.times {
+    padding: 20px;
+}
+
+.del {
+    width: 80px;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--del);
+    border-radius: 8px;
+    box-shadow: 0px 2.5px var(--keysh);
+    background-color: var(--keybg1);
+}
+
+.del:hover {
+    background-color: var(--dell);
+}
+
+.reset {
+    width: 175px;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--del);
+    border-radius: 8px;
+    box-shadow: 0px 2.5px var(--keysh);
+    background-color: var(--keybg1);
+}
+
+.reset:hover {
+    background-color: var(--dell);
+}
+
+.equal {
+    width: 175px;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0px 2.5px var(--redsh1);
+    background-color: var(--redkey1);
+}
+
+.equal:hover {
+    background-color: var(--equal);
+}
+
+
+@media screen and (max-width: 767px) {
+    .calculator {
+        width: 370px;
+        padding: 30px;
+        top: 35px;
+    }
+    
+    .screen {
+        width: 100%;
+    }
+
+    .keypad {
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .btn {
+        width: 55px;
+        border-radius: 5px;
+    }
+
+    .del {
+        width: 55px;
+        border-radius: 5px;
+    }
+
+    .reset {
+        width: 120px;
+    }
+
+    .equal {
+        width: 120px;
+    }
+
+}
